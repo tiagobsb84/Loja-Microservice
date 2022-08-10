@@ -1,0 +1,2 @@
+INDEX VERSION 1.131+C:\Users\Tiago\Desktop\Projeto Estudo\Microservices com Spring Cloud - Registry, Config Server e Distributed Tracing\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
