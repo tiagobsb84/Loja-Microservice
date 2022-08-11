@@ -1,5 +1,0 @@
-package br.com.tiago.microservice.services;
-
-public class CompraService {
-
-}

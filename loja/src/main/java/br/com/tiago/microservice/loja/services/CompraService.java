@@ -12,6 +12,7 @@ import br.com.tiago.microservice.loja.dtos.InfoFornecedorDTO;
 public class CompraService {
 
 	public void realizarCompra(CompraDTO compra) {
+			
 		RestTemplate client = new RestTemplate();
 		ResponseEntity<InfoFornecedorDTO> exchange =
 			client.exchange("http://localhost:8081/info/"+compra.getEndereco().getEstado(), 
