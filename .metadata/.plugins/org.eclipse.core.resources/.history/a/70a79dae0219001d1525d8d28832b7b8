@@ -1,0 +1,8 @@
+package br.com.tiago.microservice.dtos;
+
+import java.util.List;
+
+public class CompraDTO {
+
+	private List<ItemDaCompraDTO> itens;
+}

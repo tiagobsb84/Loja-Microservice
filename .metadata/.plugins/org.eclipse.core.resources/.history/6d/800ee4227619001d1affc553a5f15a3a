@@ -1,0 +1,23 @@
+package br.com.tiago.microservice.controllers;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+import br.com.tiago.microservice.dtos.CompraDTO;
+import br.com.tiago.microservice.services.CompraService;
+
+@RestController
+@RequestMapping("/compra")
+public class CompraController {
+	
+	@Autowired
+	private CompraService compraService;
+
+	@RequestMapping(method = RequestMethod.POST)
+	public void realizarCompras(@RequestBody CompraDTO compra) {
+		compraService.realizarCompra(compra);
+	}
+}
